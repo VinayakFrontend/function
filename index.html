@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: tomato;
+            border-radius: 10px;
+            color: white;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        div {
+            margin-top: 200px;
+            border: 2px solid black;
+            width: 40%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px 2px black;
+            background-color: aqua;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Welcome To Maggi Maker Machine</h1>
+        <button onclick="maggi()">Maggi</button>
+        <button onclick="maggiwithingredient(ingredients=prompt('enter your ingredient'));">Maggi with your
+            ingredient</button>
+
+    </div>
+
+
+
+    <script>
+
+        //simple declarative function
+
+        function maggi() {
+
+            setTimeout(() => {
+                document.write("1. Welcome! Get ready for delicious Maggi!.🥣<br>");
+                setTimeout(() => {
+                    document.write("2. Heating and Boiling water.. Please wait.🔥💧<br>");
+                    setTimeout(() => {
+                        document.write("3. Dropping noodle into hot water...🍜<br>");
+                        setTimeout(() => {
+                            document.write("4. Sprinkling Maggi Masala for extra taste!.🌶🧂<br>");
+                            setTimeout(() => {
+                                document.write("5. Stirring and Cooking for perfect texture..🍚<br>");
+                                setTimeout(() => {
+                                    document.write("6. Final touch! Maggi is almost ready..⏳<br>");
+                                    setTimeout(() => {
+                                        document.write("7. Done! Enjoy your hot Maggi!🍝😋<br>");
+                                        setTimeout(() => {
+                                            document.write("<center><img src='https://img.freepik.com/premium-photo/3d-photo-ramen-noodle-wallpaper-very-cool-wallpaper_1060235-52017.jpg' width=250  style='margin-top:20px;'></center>");
+                                            setTimeout(() => {
+                                            document.write("<center><button onclick='reloadPage();' style='margin:20px; padding: 10px; background-color: tomato; border-radius: 10px;color: white; '>Back To Menu </button></center>");
+                                        }, 5000);
+                                        }, 5000);
+                                    }, 5000);
+                                }, 5000);
+                            }, 5000);
+                        }, 5000);
+                    }, 5000);
+                }, 5000);
+            }, 0);
+        }
+
+        //function with parameter and default parameter
+        function maggiwithingredient(ingredients = "Butter") {
+            setTimeout(() => {
+                document.write("1. Welcome! Get ready for delicious Maggi!.🥣<br>");
+                setTimeout(() => {
+                    document.write("2. Heating and boiling water.. Please wait.🔥💧<br>");
+                    setTimeout(() => {
+                        document.write("3. Dropping noodle into hot water...🍜<br>");
+                        setTimeout(() => {
+                            document.write("4. Sprinkling Maggi Masala for extra taste!.🌶🧂<br>");
+                            setTimeout(() => {
+                                document.write("5. Stirring and Cooking for perfect texture..🍚<br>");
+                                setTimeout(() => {
+                                    document.write(`6. Adding your ingredient <b> ${ingredients} </b><br>`);
+                                    setTimeout(() => {
+                                        document.write("7. Final touch! Maggi is almost ready..⏳<br>");
+                                        setTimeout(() => {
+                                            document.write("8. Done! Enjoy your hot Maggi!🍝😋<br>");
+                                            setTimeout(() => {
+                                            document.write("<center><img src='https://png.pngtree.com/png-clipart/20241101/original/pngtree-green-peas-maggie-noodles-instant-served-in-a-bowl-on-transparent-png-image_16591289.png' width=250 style='margin-top:20px;'></center>");
+                                            setTimeout(() => {
+                                            document.write("<center><button onclick='reloadPage();' style='margin:20px; padding: 10px; background-color: tomato; border-radius: 10px;color: white; '>Back To Menu </button></center>");
+                                        }, 5000);
+                                        }, 5000);
+                                        }, 5000);
+                                    }, 5000);
+                                }, 5000);
+                            }, 5000);
+                        }, 5000);
+                    }, 5000);
+                }, 5000);
+            }, 0);
+
+        }
+
+
+        //function with default parameter
+
+        function reloadPage() {
+            location.reload();
+        }
+
+    </script>
+
+</body>
+
+</html>
